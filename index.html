@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <style>
+    #customers {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+    </style>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Mở Lời Đồng Ý – Rinh Lộc Phú Quý</title>
+</head>
+
+<body>
+  <div>
+    <form class="form-horizontal well">
+      <legend>
+        <h3>
+          <div id="title">Mở Lời Đồng Ý – Rinh Lộc Phú Quý</div>
+        </h3>
+      </legend>
+      <fieldset>
+        <label for="csvFileInput"> <strong>Dữ liệu:</strong>
+        </label>
+        <input type="file" id="csvFileInput" onchange="handleFiles(this.files)" accept=".csv">
+  </div>
+  </fieldset>
+  </form>
+  <input type="number" id="quantity" name="Số lượng">
+  <button onclick="myFunction()">Ngẫu nhiên</button>
+  <div id="output">
+  </div>
+  <a href="#" onclick="download_table_as_csv('customers');">Download as CSV</a>
+  </div>
+  <br>
+  <br>
+  <footer>
+    <center>
+      <p>MB Ageas Life</p>
+    </center>
+  </footer>
+
+  <!-- Le javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="js/read-csv.js"></script>
+</body>
+
+</html>
